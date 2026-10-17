@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"name": "cac-crm",
+			"path": ".."
+		},
+		{
+			"name": "demo.codeandchill.store",
+			"path": "../../../../../../../My Web Sites/codeandchillcrm/demo.codeandchill.store"
+		},
+		{
+			"name": "hts-cache",
+			"path": "../../../../../../../My Web Sites/codeandchillcrm/hts-cache"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "cac-crm"
+	}
+}

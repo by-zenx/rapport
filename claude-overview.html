@@ -1,0 +1,88 @@
+<div id="claude-overview">
+      <header class="head">
+        <h1 class="head__title">Sales<br>Overview</h1>
+        <dl class="head__stats" id="stats"></dl>
+      </header>
+
+      <div class="ov-grid">
+        <section class="card ov-rev">
+          <header class="card__head"><h2 class="card__title">Revenue</h2>
+            <div class="card__tools">
+              <div class="seg" id="seg"><button data-v="6">6M</button><button data-v="12" class="on">12M</button></div>
+              <button class="ibtn" data-ico="dots" aria-label="Revenue options"></button>
+              <button class="ibtn" data-ico="expand" aria-label="Expand"></button>
+            </div>
+          </header>
+          <div class="ov-rev__sum"><b class="num" id="revTotal"></b><span id="revSub"></span></div>
+          <div class="legend"><span><i class="tone--tomato"></i>Won revenue</span><span><i class="dash"></i>Monthly target · <span id="revTarget"></span></span></div>
+          <div class="chart" id="chart"></div>
+        </section>
+
+        <section class="card ov-hot">
+          <header class="card__head"><h2 class="card__title">Hot deals</h2>
+            <div class="card__tools"><span class="card__sub">by weighted value</span>
+              <button class="ibtn" data-ico="plus" aria-label="New deal"></button>
+              <button class="ibtn" data-ico="expand" aria-label="Expand"></button>
+            </div>
+          </header>
+          <div class="ov-hot__grid" id="hot"></div>
+        </section>
+
+        <section class="card ov-quota">
+          <header class="card__head"><h2 class="card__title">Team quota</h2>
+            <div class="card__tools"><button class="ibtn ibtn--dark" data-ico="dots" aria-label="Choose whose quota"></button></div>
+          </header>
+          <div class="ov-quota__body">
+            <div class="ov-ring"><svg viewBox="0 0 200 200"><circle class="ov-ring__track" cx="100" cy="100" r="84"/><circle class="ov-ring__arc" id="arc" cx="100" cy="100" r="84" stroke-dasharray="527.79" stroke-dashoffset="527.79"/></svg>
+              <div class="ov-ring__mid"><b class="num">24%</b><span>of Q4 quota</span></div></div>
+            <dl class="ov-quota__facts">
+              <div><dt>Won</dt><dd class="num">$112.6K</dd></div>
+              <div><dt>Quota</dt><dd class="num">$470K</dd></div>
+              <div><dt>Days left</dt><dd class="num">76</dd></div>
+            </dl>
+          </div>
+          <p class="ov-quota__pace">Needs <b>$4.7K</b> a day to land it</p>
+        </section>
+
+        <section class="card ov-mix">
+          <header class="card__head"><h2 class="card__title">Stage mix</h2>
+            <div class="card__tools"><button class="ibtn" data-ico="expand" aria-label="Expand"></button></div>
+          </header>
+          <p class="ov-mix__sum"><b class="num">$1,139,100</b><span class="card__sub">open across 47 deals</span></p>
+          <div class="ov-mix__bar" id="mixBar"></div>
+          <ul class="ov-mix__legend" id="mixLegend"></ul>
+        </section>
+
+        <section class="card ov-team">
+          <header class="card__head"><h2 class="card__title">Team leaderboard</h2>
+            <div class="card__tools"><span class="card__sub">Won this month</span>
+              <button class="ibtn" data-ico="dots" aria-label="Leaderboard options"></button>
+              <button class="ibtn" data-ico="expand" aria-label="Expand"></button>
+            </div>
+          </header>
+          <ol class="ov-rank" id="team"></ol>
+        </section>
+
+        <section class="card ov-today">
+          <header class="card__head"><h2 class="card__title">Today</h2>
+            <div class="card__tools"><button class="btn" id="addTask"></button></div>
+          </header>
+          <div class="ov-today__prog"><span id="prog"></span><span class="meter"><span class="meter__fill pine" id="progBar"></span></span></div>
+          <ul class="ov-tasks" id="tasks"></ul>
+          <div class="ov-next">
+            <div class="ov-next__head"><span>Coming up</span><a class="btn btn--ghost" href="#/schedule">Open schedule</a></div>
+            <ul id="next"></ul>
+          </div>
+        </section>
+
+        <section class="card ov-act">
+          <header class="card__head"><h2 class="card__title">Recent activity</h2>
+            <div class="card__tools">
+              <button class="ibtn" data-ico="archive" aria-label="Open all activity"></button>
+              <button class="ibtn" data-ico="expand" aria-label="Expand"></button>
+            </div>
+          </header>
+          <ol class="ov-feed" id="feed"></ol>
+        </section>
+      </div>
+    </div>
